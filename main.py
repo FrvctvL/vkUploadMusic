@@ -132,12 +132,16 @@ if isAdd == 0: # def main(): Для лохов :) Если кому-то нуж�
                 pause()
 
 # =================================================|  Results  |====================================================== #
+
             if skp == 0:
                 print("\033[1m\033[37m[\033[35m{} \033[37m- \033[35m{}\033[37m] [\033[36m{} \033[37m- \033[36m{}\033[37m] [\033[35m{}\033[37m]\033[0m".format(id, owner, response['title'], response['artist'], mutagen.File(path).get('TXXX:id')))
             else:
                 print("\033[1m\033[37m[\033[35m{} \033[37m- \033[35m{}\033[37m] [\033[36m{} \033[37m- \033[36m{}\033[37m] [\033[35m{}\033[37m]\033[0m".format(id, owner, title, artist, mutagen.File(path).get('TXXX:id')))
 
                 time.sleep(delay)
+                
+# =================================================|  Add to Playlist | ============================================== #
+
 else:
     try:
         with open(playlistMusicList, newline='', encoding='utf8') as csvfile:
